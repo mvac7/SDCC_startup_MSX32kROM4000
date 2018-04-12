@@ -35,13 +35,13 @@ Add MSX ROM header, initialice a stack, set the second ROM page and execute main
 Include winOS script (.BAT) for compile 32K projects.
 This script compile and generate the binary with the appropriate size.
 
-This startup use the rutine *find_rom_page_2* created by *Eduardo Robsy*
+This startup use the rutine *find_rom_page_2* created by **Eduardo Robsy**
 
 
 Example for compile and create a 32K ROM binary:
   
-'sdcc -mz80 --code-loc 0x4050 --data-loc 0xC000 --use-stdout --no-std-crt0 crt_MSX32kROM4000.rel CFILENAME.c'                           
-'hex2bin -e ROM -s 4000 -l 8000 CFILENAME.ihx'   <--- generate a binary file and fill to 32768 Bytes size (8000h) 
+`sdcc -mz80 --code-loc 0x4050 --data-loc 0xC000 --use-stdout --no-std-crt0 crt_MSX32kROM4000.rel CFILENAME.c`                           
+`hex2bin -e ROM -s 4000 -l 8000 CFILENAME.ihx`   <--- generate a binary file and fill to 32768 Bytes size (8000h) 
 
 
 In the test\ folder you will find an example (HelloWorld).
@@ -87,10 +87,10 @@ These scripts can be adapted to Linux. I am waiting for an expert who wants to c
 
 To adapt the script to your project, you must follow the following steps:
 
-1. Copy the *Makefile* file into the root path of your project.
+1. Copy the **Makefile** file into the root path of your project.
 2. Edit the makefile with your favourite editor.
-3. Put the sourcecode file name without extension at 'CFILENAME' field.
-4. Put the output ROM file name without extension at 'ROMFILENAME' field.
+3. Put the sourcecode file name without extension at `CFILENAME` field.
+4. Put the output ROM file name without extension at `ROMFILENAME` field.
 5. Place the file paths of the objects in the LIBn fields.
 
 I recommend using this structure:
