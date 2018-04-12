@@ -1,4 +1,4 @@
-# SDCC C MSX 32K 4000h ROM startup (crt) file
+# SDCC C MSX 32K 4000h ROM startup file (CRT)
 
 Version: 1.1
 
@@ -26,11 +26,12 @@ History of versions:
 
 This project is an opensource library (object type).
 
-Startup (CRT) file for developing MSX 32K ROM applications using Small Device C 
+Startup file (CRT) for developing MSX 32K ROM applications using Small Device C 
 Compiler (SDCC). 
 
-With this CRT, the ROM is allocated in the second bank (4000h). 
-Add MSX ROM header, initialice a stack, set the second ROM page and execute main function. 
+This CRT includes the header of the MSX ROM, initializes the stack, configures 
+the second page of the ROM, and executes the main function. 
+The ROM is allocated in the second bank (4000h).
   
 Include winOS script (.BAT) for compile 32K projects.
 This script compile and generate the binary with the appropriate size.
@@ -54,6 +55,7 @@ Thanks for Info & help, to:
 
 * Avelino Herrera > http://msx.atlantes.org/index_es.html
 * Nerlaska > http://albertodehoyonebot.blogspot.com.es
+* Eduardo Robsy
 * Fubu > http://www.gamerachan.org/fubu/
 * Marq/Lieves!Tuore > http://www.kameli.net/lt/
 * Sapphire/Z80ST > http://z80st.auic.es/
@@ -67,7 +69,7 @@ Thanks for Info & help, to:
 * Karoshi MSX Community > http://karoshi.auic.es/
 * BlueMSX >> http://www.bluemsx.com/
 * OpenMSX >> http://openmsx.sourceforge.net/
-* Meisei  >> ?
+* Meisei
 
 
 
@@ -81,17 +83,17 @@ Thanks for Info & help, to:
 ## 4. How to use a winOS scripts
 
 In this project, i'm included a two winOS script files: for 8K or 16K ROMs.
-The script is the same but with the size parameter (ROMSIZE) modified for each case.
+The script is the same but with the size parameter `ROMSIZE` modified for each case.
 
 These scripts can be adapted to Linux. I am waiting for an expert who wants to collaborate with this task. ;) 
 
 To adapt the script to your project, you must follow the following steps:
 
-1. Copy the **Makefile** file into the root path of your project.
-2. Edit the makefile with your favourite editor.
+1. Copy the **Makefile** into the root path of your project.
+2. Edit the Makefile with your favourite editor.
 3. Put the sourcecode file name without extension at `CFILENAME` field.
 4. Put the output ROM file name without extension at `ROMFILENAME` field.
-5. Place the file paths of the objects in the LIBn fields.
+5. Place the file paths of the objects in the `LIBn` fields.
 
 I recommend using this structure:
 
