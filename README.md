@@ -33,10 +33,10 @@ This CRT includes the header of the MSX ROM, initializes the stack, configures
 the second page of the ROM, and executes the main function. 
 The ROM is allocated in the second bank (4000h).
   
-Include winOS script (.BAT) for compile 32K projects.
+It includes winOS and Linux scripts for compiling a 32K projects.  
 This script compile and generate the binary with the appropriate size.
 
-This startup use the rutine *find_rom_page_2* created by **Eduardo Robsy**
+This startup uses the rutine *find_rom_page_2* created by **Eduardo Robsy**
 
 
 Example for compile and create a 32K ROM binary:
@@ -82,10 +82,10 @@ Thanks for Info & help, to:
 
 ## 4. How to use a winOS scripts
 
-In this project, i'm included a two winOS script files: for 8K or 16K ROMs.
+In this project, I have included a makefile for 32K ROMs.
 The script is the same but with the size parameter `ROMSIZE` modified for each case.
 
-These scripts can be adapted to Linux. I am waiting for an expert who wants to collaborate with this task. ;) 
+The script for Linux works in the same way.
 
 To adapt the script to your project, you must follow the following steps:
 
