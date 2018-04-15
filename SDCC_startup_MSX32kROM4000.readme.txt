@@ -10,11 +10,12 @@ Doc version: 1.0
 
 
 History of versions:
-- v1.1 (12/04/2018) Current version
+> v1.1 (12/04/2018) Current version
 - v1.0 (25/04/2010) Initial version
 
 
 Document changes:
+> v1.1 (15/04/2018) Fubu corrections.
 - v1.0 (27/03/2018) Initial version.
     
     
@@ -26,7 +27,7 @@ Index:
 1 Introduction
 2 Acknowledgments.
 3 Requirements
-4 How to use a winOS scripts
+4 How to use the script
                        
 
 
@@ -42,10 +43,10 @@ This CRT includes the header of the MSX ROM, initializes the stack, configures
 the second page of the ROM, and executes the main function. 
 The ROM is allocated in the second bank (4000h). 
   
-Include winOS script (.BAT) for compile 32K projects.
+It includes winOS and Linux scripts for compiling a 32K projects.
 This script compile and generate the binary with the appropriate size.
 
-This startup use the rutine find_rom_page_2 created by Eduardo Robsy
+This startup uses the rutine find_rom_page_2 created by Eduardo Robsy
 
 
 Example for compile and create a 32K ROM binary:  
@@ -94,14 +95,9 @@ In the test\ folder you will find an example (HelloWorld).
 
 
 --------------------------------------------------------------------------------
-4 How to use a winOS scripts
+4 How to use the script
 
-In this project, i'm included a two winOS script files: for 8K or 16K ROMs.
-The script is the same but with the size parameter (ROMSIZE) modified for each 
-case.
-
-These scripts can be adapted to Linux. I am waiting for an expert who wants to 
-collaborate with this task. ;) 
+In this project, you have the MAKEFILE for Windows and Linux OS.
 
 To adapt the script to your project, you must follow the following steps:
 
@@ -111,7 +107,7 @@ To adapt the script to your project, you must follow the following steps:
 4. Put the output ROM file name without extension at ROMFILENAME field.
 5. Place the file paths of the objects in the LIBn fields.
 
-I recommend using this structure:
+To work, need this directory structure:
 
   src\      <--- sources
   include\  <--- headers (.h) files

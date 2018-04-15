@@ -26,8 +26,7 @@ History of versions:
 
 This project is an opensource library (object type).
 
-Startup file (CRT) for developing MSX 32K ROM applications using Small Device C 
-Compiler (SDCC). 
+Startup file (CRT) for developing MSX 32K ROM applications using Small Device C Compiler (SDCC). 
 
 This CRT includes the header of the MSX ROM, initializes the stack, configures 
 the second page of the ROM, and executes the main function. 
@@ -80,12 +79,9 @@ Thanks for Info & help, to:
 
 
 
-## 4. How to use a winOS scripts
+## 4. How to use the script
 
-In this project, I have included a makefile for 32K ROMs.
-The script is the same but with the size parameter `ROMSIZE` modified for each case.
-
-The script for Linux works in the same way.
+In this project, you have the MAKEFILE for Windows and Linux OS.
 
 To adapt the script to your project, you must follow the following steps:
 
@@ -95,7 +91,7 @@ To adapt the script to your project, you must follow the following steps:
 4. Put the output ROM file name without extension at `ROMFILENAME` field.
 5. Place the file paths of the objects in the `LIBn` fields.
 
-I recommend using this structure:
+To work, need this directory structure:
 
 - src\      <--- sources
 - include\  <--- headers (.h) files
