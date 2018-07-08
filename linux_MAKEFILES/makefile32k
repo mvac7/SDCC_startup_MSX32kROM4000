@@ -4,7 +4,7 @@
 CFILENAME=SOURCENAME
 ROMFILENAME=ROMNAME
 CODELOC=0x4050
-CRT=libs/crt_MSX32kROM4000.rel
+CRT=libs/crt0_MSX32kROM4000.rel
 
 # add paths from our objects files into LIB variable
 LIBS=

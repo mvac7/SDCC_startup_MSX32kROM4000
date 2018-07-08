@@ -2,6 +2,8 @@
 
 Version: 1.1
 
+Date: 12/04/2018
+
 Author: mvac7/303bcn
 
 Architecture: MSX
@@ -40,7 +42,7 @@ This startup uses the rutine *find_rom_page_2* created by **Eduardo Robsy**
 
 Example for compile and create a 32K ROM binary:
   
-`sdcc -mz80 --code-loc 0x4050 --data-loc 0xC000 --use-stdout --no-std-crt0 crt_MSX32kROM4000.rel CFILENAME.c`                           
+`sdcc -mz80 --code-loc 0x4050 --data-loc 0xC000 --use-stdout --no-std-crt0 crt0_MSX32kROM4000.rel CFILENAME.c`                           
 `hex2bin -e ROM -s 4000 -l 8000 CFILENAME.ihx`   <--- generate a binary file and fill to 32768 Bytes size (8000h) 
 
 

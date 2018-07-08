@@ -5,7 +5,7 @@ REM ROMFILENAME = ROM file name without extension
 SET CFILENAME=HelloWorld
 SET ROMFILENAME=HELLOW32
 SET CODELOC=0x4050
-SET CRT=libs\crt_MSX32kROM4000.rel
+SET CRT=libs\crt0_MSX32kROM4000.rel
 REM add paths from our objects files into LIBn variables
 REM don't erase empty variables
 SET LIB0=
